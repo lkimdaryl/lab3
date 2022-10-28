@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class ArrayExamples {
 
@@ -13,10 +13,20 @@ public class ArrayExamples {
   // order
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
+    
+//    for(int i = 0; i < arr.length; i += 1) {
+//      arr[i] = newArray[arr.length - i - 1];
+//    }
+        
+//    return arr;
+    
+    int index = 0;
+    for(int i=arr.length -1; i>=0; i--) {
+    	newArray[index] = arr[i];
+    	index++;
     }
-    return arr;
+    
+    return newArray;
   }
 
   // Averages the numbers in the array (takes the mean), but leaves out the
@@ -28,13 +38,21 @@ public class ArrayExamples {
     for(double num: arr) {
       if(num < lowest) { lowest = num; }
     }
+    
+    ArrayList<Double> myList = new ArrayList<>();
+    
     double sum = 0;
     for(double num: arr) {
-      if(num != lowest) { sum += num; }
+      if(num != lowest) { 
+    	  myList.add(num);
+    	  sum += num; 
+    	  }
     }
-    return sum / (arr.length - 1);
+    double average = sum/myList.size();
+    
+    return average;
   }
-
+  
 
 }
 

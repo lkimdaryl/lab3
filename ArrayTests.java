@@ -1,5 +1,7 @@
-import static org.junit.Assert.*;
-import org.junit.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 public class ArrayTests {
 	@Test 
@@ -12,7 +14,17 @@ public class ArrayTests {
 
   @Test
   public void testReversed() {
-    int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+    int[] input1 = {1,2,3};
+    assertArrayEquals(new int[]{3,2,1 }, ArrayExamples.reversed(input1));
   }
+  
+
+  @Test
+  public void averageWithoutLowest() {
+    double[] input = {1,1,1,-1,1,2,3};
+    assertEquals(1.5, ArrayExamples.averageWithoutLowest(input), 0.1);
+  }
+  
+  
+  
 }
