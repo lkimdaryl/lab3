@@ -1,4 +1,4 @@
-# Lab 3 Report
+# Lab 2 Report
 ## Part 2
 Choose two of the bugs from different files above. For each, show:
 1. The failure-inducing input (the code of the test)
