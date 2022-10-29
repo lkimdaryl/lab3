@@ -48,6 +48,7 @@ int[] input1 = {1,2,3};
     return arr;
 ```
 4. The code is accessing the wrong element for each iteration of the for loop and therefore will return the wrong result.
+____
 
 2nd code:
 ```
