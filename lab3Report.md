@@ -36,6 +36,7 @@ Choose two of the bugs from different files above. For each, show:
 int[] input1 = {1,2,3};
 ```
 2. Symptom:
+
 ![](./imgs/ArrayTestInducingFailure.JPG)
 
 3. bug:
@@ -76,6 +77,7 @@ class ListExamples {
 		myList.add("pale");
 ```
 2. Symptom:
+
 ![](./imgs/ListTestFailure.JPG)
 
 3. bug:
